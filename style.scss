@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// You Can Remove The Font, This Is Just For Example
+// Put All Styles In Here Necessary For The Page
+
+body {
+  @apply bg-gray-50;
+}
+
+form[cosmic-form] {
+  @apply bg-white border border-gray-100 p-4 rounded max-w-xl mx-auto;
+
+  .cosmic-form_formWrapper {
+    @apply flex flex-col space-y-4;
+  }
+
+  .cosmic-form_inputs {
+    @apply grid grid-cols-12 gap-2;
+  
+    label {
+      @apply col-span-12 flex flex-col;
+  
+      &[for="firstName"], &[for="lastName"] {
+        @apply col-span-6;
+      }
+    }
+  }
+
+  .cosmic-form_buttons {
+    button[type="submit"], .cosmic-form_submit {
+      @apply bg-blue-500 text-white px-4 py-2 rounded w-full;
+    }
+  }
+}
+

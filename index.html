@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="./assets/favicon.png" rel="shortcut icon" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Example Title</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Example Logo</h1>
+            <b>Latest Crypto Price: <font data-crypto="marketCap_formatted">Loading...</font></b>
+        </header>
+        <main>
+            <section class="container mx-auto">
+                <h3>Here Is The Form</h3>
+                <form cosmic-form></form>
+                <p>You are located in <font data-replace="geoCountry"></font></p>
+            </section>
+        </main>
+        <footer>
+            <p>Earnings and income representations made by <font data-replace="siteDomain">this site</font> are only used as aspirational examples.</p>
+            <small>Copyright <font data-replace="dateYear"></font></small>
+        </footer>
+    </div>
+    <script src="/main.js" type="module"></script>
+    <script src="//form.cosmicm.workers.dev/form.mjs" defer type="application/javascript"></script>
+</body>
+</html>
