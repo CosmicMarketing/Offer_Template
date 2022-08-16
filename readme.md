@@ -13,3 +13,8 @@ Compile Assets For Upload:
 
 ### Adding Locale Information
 https://github.com/CosmicMarketing/Service_Locale
+
+### Replace Form
+
+Replace the form element with dynamic script:
+`<form cosmic-form></form>`
